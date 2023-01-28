@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./images/hot.png" type="image/x-icon">
+</head>
+<body>
+
+     <section class="inputs">
+        <h2>weather report</h2>
+        <div class="input-container">
+        <input class="search" type="text" placeholder="Enter any city..." id="cityinput">
+        <input class="btn" type="submit" value="Submit" id="add">
+        </div>
+     </section>
+
+     <section class="display hidden">
+        <div class="report-conatiner">
+            <h2 class="heading">Weather Report</h2>
+        <img src="./images/weather.gif" alt="">
+        <div class="wrapper">
+            <h2 id="cityoutput">......</h2>
+            <p id="description">....</p>
+            <p id="temp">..</p>
+            <p id="wind">..</p>
+        </div>
+        </div>
+      </section>
+      
+
+
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
