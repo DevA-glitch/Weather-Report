@@ -1,15 +1,16 @@
 //Now we need to determine the constant of one of the id functions. Because no html function can be used directly in JavaScript.
 let inputval = document.querySelector('#cityinput')
 let btn = document.querySelector('#add');
-let city = document.querySelector('#cityoutput')
-let descrip = document.querySelector('#description')
-let temp = document.querySelector('#temp')
-let wind = document.querySelector('#wind')
+let city = document.querySelector('#cityoutput');
+let descrip = document.querySelector('#description');
+let temp = document.querySelector('#temp');
+let wind = document.querySelector('#wind');
 let inputEL = document.querySelector('.inputs');
 let displayEl = document.querySelector('.display');
+let btnBackEl = document.getElementById('back');
 
 
-apik = "3045dd712ffe6e702e3245525ac7fa38"
+apik = "3045dd712ffe6e702e3245525ac7fa38";
 
 //kelvin to celcious. 1 Kelvin is equal to -272.15 Celsius.
 
@@ -54,4 +55,8 @@ function convertion(val){
     })
 //If you click on the submit button without inputting anything in the input box or typing the wrong city name then the above text can be seen.
 
-
+btnBackEl.addEventListener('click', function(){
+    inputEL.classList.remove('hidden');
+    displayEl.classList.add('hidden');
+    inputval.value = null;
+});

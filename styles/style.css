@@ -49,7 +49,7 @@ img {
 
 input {
     width: 100%;
-    padding: .5rem;
+    padding: .4rem;
     margin-top: 1rem;
 }
 
@@ -99,5 +99,20 @@ input::placeholder {
 
 .hidden {
     display: none;
+}
+
+
+.btn-1 {
+    font-size: .5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgb(240, 0, 0);
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .2s;
+    width: 30%;
+    box-shadow: 10px 10px grey;
 }
 
